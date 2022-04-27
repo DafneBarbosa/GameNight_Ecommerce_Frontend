@@ -1,6 +1,6 @@
 export default async function saveProduct(body,getProducts,setProducts,clearStates) {
     try {
-        await fetch("http://localhost:8080/products", {
+        await fetch(" http://gamenight-backend.herokuapp.com/products", {
           method: "POST",
           body: JSON.stringify(body),
           headers: { "Content-type": "application/json; charset=UTF-8" }

@@ -1,6 +1,6 @@
 export default async function updateProduct(body,getProducts,setProducts,clearStates) {
     try {
-        await fetch("http://localhost:8080/products", {
+        await fetch(" http://gamenight-backend.herokuapp.com/products", {
           method: "PUT",
           body: JSON.stringify(body),
           headers: { "Content-type": "application/json; charset=UTF-8" }

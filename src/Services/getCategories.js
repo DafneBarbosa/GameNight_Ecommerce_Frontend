@@ -1,7 +1,7 @@
 export default async function getCategories(setCategories) {
 
   try {
-    const categories = await fetch("http://localhost:8080/categories")
+    const categories = await fetch(" http://gamenight-backend.herokuapp.com/categories")
       .then((response) => response.json());
     setCategories(categories);
   } catch (error) {
